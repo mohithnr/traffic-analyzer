@@ -219,9 +219,9 @@ function TrafficChart() {
         {/* Header */}
         <div className="text-center mb-10">
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-3">
-            Traffic Intelligence
+            Traffic Analysis
           </h2>
-          <p className="text-gray-600 text-lg">Real-time route analysis powered by AI</p>
+          <p className="text-gray-600 text-lg"></p>
         </div>
         
         <LoadScript googleMapsApiKey={GOOGLE_MAPS_API_KEY} libraries={["places"]}>
