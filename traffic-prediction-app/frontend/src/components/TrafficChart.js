@@ -84,7 +84,6 @@ function TrafficChart() {
         travel_time: 0,
         traffic_delay: 0,
         traffic_length: 0,
-        total_distance: 0,
         departure_time: 'Fetching...',
         arrival_time: 'Fetching...',
         weather: 'Fetching...',
@@ -440,14 +439,8 @@ const CustomTooltip = ({ active, payload }) => {
               <span className="text-gray-600">Traffic Delay:</span>
               <span className="text-purple-600 font-semibold">{data.traffic_delay} mins</span>
             </div>
-            <div className="flex justify-between items-center">
-              <span className="text-gray-600">Traffic Length:</span>
-              <span className="text-pink-600 font-semibold">{(data.traffic_length/1000).toFixed(2)} km</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-gray-600">Distance:</span>
-              <span className="text-gray-800 font-semibold">{(data.total_distance / 1000).toFixed(2)} km</span>
-            </div>
+            
+
             <div className="pt-2 mt-2 border-t-2 border-gray-200">
               <div className="flex justify-between items-center mb-1">
                 <span className="text-gray-600">Departure:</span>
@@ -485,5 +478,6 @@ const CustomTooltip = ({ active, payload }) => {
   }
   return null;
 };
+
 
 export default TrafficChart;
